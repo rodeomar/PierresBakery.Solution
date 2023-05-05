@@ -36,5 +36,19 @@ namespace PierresBakery.Tests
             decimal totalCost = bread.GetOrderCost(5);
             Assert.AreEqual(20m, totalCost);
         }
+        [TestMethod]
+        public void TestBreadCost_SixLoaves()
+        {
+            Bread bread = new Bread();
+            decimal totalCost = bread.GetOrderCost(6);
+            Assert.AreEqual(20m, totalCost);
+        }
+        [TestMethod]
+        public void TestBreadCost_SevenLoaves()
+        {
+            Bread bread = new Bread();
+            decimal totalCost = bread.GetOrderCost(7);
+            Assert.AreEqual(25m, totalCost);
+        }
     }
 }
