@@ -9,6 +9,13 @@ namespace PierresBakery.Tests
     public class BakeryTests
     {
         [TestMethod]
+        public void TestBreadCost_OneLoaves()
+        {
+            Bread bread = new Bread();
+            decimal totalCost = bread.GetOrderCost(1);
+            Assert.AreEqual(5, totalCost);
+        }
+        [TestMethod]
         public void TestBreadCost_TwoLoaves()
         {
             Bread bread = new Bread();
@@ -56,6 +63,13 @@ namespace PierresBakery.Tests
             Pastry pastry = new Pastry();
             decimal totalCost = pastry.GetOrderCost(1);
             Assert.AreEqual(2, totalCost);
+        }
+        [TestMethod]
+        public void TestPastryCost_TwoPastry()
+        {
+            Pastry pastry = new Pastry();
+            decimal totalCost = pastry.GetOrderCost(2);
+            Assert.AreEqual(4, totalCost);
         }
     }
 }
