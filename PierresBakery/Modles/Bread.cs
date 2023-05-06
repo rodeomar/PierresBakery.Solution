@@ -34,7 +34,7 @@ public class Pastry
       pastryCount++;
       totalCost += Price;
 
-      if (pastryCount == 3)
+      if (pastryCount == 4)
       {
         totalCost -= Price;
         pastryCount = 0;
