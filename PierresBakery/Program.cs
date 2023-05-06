@@ -8,6 +8,7 @@ namespace PierresBakery;
     static void Main(string[] args)
     {
       Console.WriteLine("Welcome to Pierre's Bakery!");
+      Console.WriteLine("----------------------------");
       Console.WriteLine("We have two items: Bread and Pastry");
       Console.WriteLine("Here are the deals we offer:");
       Console.WriteLine("Bread: Buy 2, get 1 free. A single loaf costs $5.");
