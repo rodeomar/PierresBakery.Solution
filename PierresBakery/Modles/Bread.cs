@@ -40,7 +40,6 @@ public class Pastry
         pastryCount = 0;
       }
     }
-
     return totalCost;
   }
 }

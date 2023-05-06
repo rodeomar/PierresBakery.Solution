@@ -36,9 +36,5 @@ namespace PierresBakery;
 
       Console.WriteLine("Your order total is $" + (breadCost + pastryCost));
     }
-    else
-    {
-    Console.WriteLine("Thank you for visiting Pierre Bakery!");
-    }
   }
 }
