@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using PierresBakery.Models;
 
-namespace PierresBakery
-{
+namespace PierresBakery;
   class Program
   {
     static void Main(string[] args)
@@ -14,6 +13,10 @@ namespace PierresBakery
       Console.WriteLine("Bread: Buy 2, get 1 free. A single loaf costs $5.");
       Console.WriteLine("Pastry: Buy 3, get 1 free. A single pastry costs $2.");
 
+    Console.WriteLine("Would you like to place an order? (Y/N)");
+    string input = Console.ReadLine();
+    if (input.ToUpper() == "Y")
+    {
       Console.WriteLine("How many loaves of bread would you like?");
       int breadCount = Convert.ToInt32(Console.ReadLine());
 
@@ -31,6 +34,10 @@ namespace PierresBakery
       decimal pastryCost = (pastryCount - freePastryCount) * 2m;
 
       Console.WriteLine("Your order total is $" + (breadCost + pastryCost));
+    }
+    else
+    {
+    Console.WriteLine("Thank you for visiting Pierre Bakery!");
     }
   }
 }
